@@ -2,11 +2,13 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --background-button: #188ce8;
   --text-white-color: #ffffff;
 
   --background-color: #e5e5e5;
   --hero-background-color: #2f303a;
   --second-accent-color: #000000;
+  --filter-background: #f5f4fa;
 }
 .body {
   background-color: var(--background-color);
@@ -33,7 +35,9 @@
 .accent {
   color: var(--accent-color);
 }
-.site-nav .link {
+.site-nav .link,
+.auth-nav .mail,
+.auth-nav .phone {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -41,6 +45,7 @@
   text-decoration: none;
 }
 .site-nav .link-current {
+  color: #188ce8;
   text-decoration: none;
 }
 
@@ -73,7 +78,7 @@
 }
 .hero-button {
   color: var(--text-white-color);
-  background-color: var(--accent-color);
+  background-color: var(--background-button);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -83,6 +88,7 @@
 .hero-button:hover,
 .hero-button:focus {
   color: #188ce8;
+  background-color: var(--text-white-color);
 }
 
 /* section */
@@ -91,6 +97,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -122,9 +129,19 @@
 }
 
 /* текст подвал */
-.footer .mail,
-.footer .phone {
-  color: var(--primary-text-color);
+.footer {
+  background-color: var(--hero-background-color);
+  color: var(--accent-color);
+}
+
+.footer-address {
+  color: var(--text-white-color);
+}
+.footer-mail,
+.footer-phone {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail:hover,
 .footer-phone:hover,
@@ -138,15 +155,18 @@
 }
 
 /* portfolio */
-.button {
+.buttons {
+  color: var(--title-text-color);
+  background-color: var(--filter-background);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
 }
-.button .button:hover,
-.button .button:focus {
-  color: var(--accent-color);
+.buttons:hover,
+.buttons:focus {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
 }
 .filter-list .title {
   font-size: 18px;
